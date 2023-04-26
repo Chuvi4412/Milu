@@ -94,4 +94,120 @@ body {
 .design-seccion a:hover::after{
     margin-left: 14px;
 }
+.development-seccion{
+    max-width: 1440px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.development-seccion h2{
+    font-family: "Muli";
+    font-weight: 800;
+    font-size: 32px;
+    color: #444444;
+    line-height: 48px;
+    margin-bottom: 35px;
+    text-align: left;
 
+}
+.development-seccion p{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+.development-seccion a{
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #828fd3 0%, #5e6dbe 51%, #5461aa 100%);
+    padding: 17px 33px;
+    border-radius: 999em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .4s all;
+    display: block;
+    width: fit-content;
+    background-position: right center;
+    
+}
+.development-seccion img{
+    display: block;
+    margin: auto;
+}
+
+.development-seccion a:hover{
+    box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
+    transform: translateY(-3px);
+    background-size: 200% auto;
+
+}
+
+.development-seccion h2 span{
+    position: relative;
+
+}
+
+.development-seccion h2 span::after{
+    content: "";
+    background-color: #ffc050;
+    height: 45%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.development-seccion-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.development-seccion-card{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    padding: 30px;
+    transition: .3s all;
+
+}
+.development-seccion-card:hover{
+    box-shadow: 0 15px 33px 0 rgba(0, 0, 0, .14);
+    transform: translateY(-4px);
+
+}
+.development-seccion-card i{
+    background-color: #ffc050;
+    border-radius: 999em;
+    color: white;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    margin-right: 28px;
+}
+.development-seccion-card h3{
+    font-weight: 800;
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 32px;
+    color: #444444;
+}
+.development-seccion-card p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.development-seccion-card .icon-purple{
+    background-color: #6272c7;
+}
