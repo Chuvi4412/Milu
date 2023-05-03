@@ -1,0 +1,67 @@
+header{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    gap: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    align-items: center;
+    right: 0;
+}
+header .header-logo a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 88px;
+    color: #333333;
+    position: relative;
+    padding: 0 3px ;
+}
+header .header-logo a::before{
+    content: "";
+    background-color: #ffc050;
+    height: 20%;
+    left: 0%;
+    bottom: 15%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+header .header-menu{
+    display: flex;
+    flex: 1;
+}
+header .header-menu ul{
+    display: flex;
+    gap: 48px;
+}
+header .header-menu ul a{
+    text-decoration: none;
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 88px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .2s all;
+}
+header .header-menu ul a:hover{
+    opacity: .66;
+}
+header .header-hamburger-menu a{
+    display: block;
+}
+header .header-hamburger-menu a span{
+    display: block;
+    background-color: #333333;
+    height: 2px;
+    margin-bottom: 4px;
+    width: 24px;
+    border: 0;
+    outline: none;
+}
