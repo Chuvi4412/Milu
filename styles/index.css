@@ -16,6 +16,9 @@ body {
 ::selection{
     background-color: #ffc050;
 }
+li{
+    list-style: none;
+}
 
 .button-milu{
     font-family: Muli;
@@ -249,7 +252,7 @@ body {
     margin-bottom: 16px;
 }
 .webuild-seccion p{
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 20px;
     font-weight: 400px;
     line-height: 28px;
@@ -296,4 +299,16 @@ body {
 .webuild-seccion img{
     max-width: 700px;
     display: block;
+}
+.innovate-mobil h2{
+    font-size: 32px;
+    font-family: Muli;
+    font-weight: 800;
+    line-height: 48px;
+    color: #444444;
+}
+.bell-container img{
+    width: 100%;
+
+
 }

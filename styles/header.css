@@ -65,3 +65,29 @@ header .header-hamburger-menu a span{
     border: 0;
     outline: none;
 }
+header .header-menu .sub-menu, header .header-menu .sub-menu .second-sub-menu{
+    position: absolute;
+    display: block;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 250px;
+    transition: .5s all;
+    opacity: 0;
+    visibility: hidden;
+}
+header .header-menu .sub-menu li a{
+line-height: 40px;
+}
+header .header-menu .menu-item:hover .sub-menu, 
+header .header-menu .sub-menu .sub-menu-item:hover .second-sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+header .header-menu .sub-menu .second-sub-menu{
+    right: -250px;
+    top: 0;
+    transition: .5s all;
+    opacity: 0;
+    visibility: hidden;
+}
