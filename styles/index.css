@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
-    padding: 0
-    ;
+    padding: 0;
 }
 
 body {
@@ -13,14 +12,18 @@ body {
     color: #444444;
 }
 
-::selection{
+::selection {
     background-color: #ffc050;
 }
-li{
+
+li {
     list-style: none;
 }
+img {
+    max-width: 100%;
+}
 
-.button-milu{
+.button-milu {
     font-family: Muli;
     font-weight: 700;
     font-size: 12px;
@@ -37,14 +40,15 @@ li{
     width: fit-content;
     background-position: right center;
 }
-.button-milu:hover{
+
+.button-milu:hover {
     box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
     transform: translateY(-3px);
     background-size: 200% auto;
 
 }
 
-.button-milu-yellow{
+.button-milu-yellow {
     background: #ffc050;
 }
 
@@ -71,17 +75,18 @@ li{
     line-height: 26px;
 }
 
-.design-seccion{
+.design-seccion {
     text-align: left;
 }
 
-.design-seccion img{
+.design-seccion img {
     width: 100%;
     max-width: 385px;
     margin-bottom: 20px;
 
 }
-.design-seccion h2{
+
+.design-seccion h2 {
     font-size: 22px;
     line-height: 32px;
     font-weight: 800;
@@ -91,14 +96,14 @@ li{
 }
 
 
-.design-seccion p{
+.design-seccion p {
     font-size: 16px;
     line-height: 30px;
     color: #333333;
     margin: 0px 0px 15px 0px;
 }
 
-.design-seccion a{
+.design-seccion a {
     font-family: "Muli";
     font-weight: 700;
     font-size: 11px;
@@ -109,7 +114,7 @@ li{
     align-items: center;
 }
 
-.design-seccion a::after{
+.design-seccion a::after {
     transition: .3s all;
     content: "";
     background-image: url(../img/icons/chevron-right.svg);
@@ -122,17 +127,19 @@ li{
     position: relative;
 }
 
-.design-seccion a:hover::after{
+.design-seccion a:hover::after {
     margin-left: 14px;
 }
-.development-seccion{
+
+.development-seccion {
     max-width: 1440px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-.development-seccion h2{
+
+.development-seccion h2 {
     font-family: "Muli";
     font-weight: 800;
     font-size: 32px;
@@ -142,7 +149,8 @@ li{
     text-align: left;
 
 }
-.development-seccion p{
+
+.development-seccion p {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 16px;
@@ -150,7 +158,8 @@ li{
     line-height: 30px;
     margin-bottom: 35px;
 }
-.development-seccion a{
+
+.development-seccion a {
     font-family: Muli;
     font-weight: 700;
     font-size: 12px;
@@ -166,26 +175,27 @@ li{
     display: block;
     width: fit-content;
     background-position: right center;
-    
+
 }
-.development-seccion img{
+
+.development-seccion img {
     display: block;
     margin: auto;
 }
 
-.development-seccion a:hover{
+.development-seccion a:hover {
     box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
     transform: translateY(-3px);
     background-size: 200% auto;
 
 }
 
-.development-seccion h2 span{
+.development-seccion h2 span,.innovate-mobil h2 span,.final-seccion-cards h2 span {
     position: relative;
 
 }
 
-.development-seccion h2 span::after{
+.development-seccion h2 span::after, .innovate-mobil h2 span::after, .final-seccion-cards h2 span::after {
     content: "";
     background-color: #ffc050;
     height: 45%;
@@ -196,13 +206,13 @@ li{
     z-index: -1;
 }
 
-.development-seccion-card-container{
+.development-seccion-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
 }
 
-.development-seccion-card{
+.development-seccion-card {
     display: flex;
     border: 1px solid rgba(0, 0, 0, .05);
     border-radius: 4px;
@@ -210,12 +220,14 @@ li{
     transition: .3s all;
 
 }
-.development-seccion-card:hover{
+
+.development-seccion-card:hover {
     box-shadow: 0 15px 33px 0 rgba(0, 0, 0, .14);
     transform: translateY(-4px);
 
 }
-.development-seccion-card i{
+
+.development-seccion-card i {
     background-color: #ffc050;
     border-radius: 999em;
     color: white;
@@ -227,22 +239,26 @@ li{
     font-size: 1.4em;
     margin-right: 28px;
 }
-.development-seccion-card h3{
+
+.development-seccion-card h3 {
     font-weight: 800;
     font-family: Muli;
     font-size: 18px;
     line-height: 32px;
     color: #444444;
 }
-.development-seccion-card p{
+
+.development-seccion-card p {
     font-size: 14px;
     line-height: 26px;
     color: #333333;
 }
-.development-seccion-card .icon-purple{
+
+.development-seccion-card .icon-purple {
     background-color: #6272c7;
 }
-.webuild-seccion h2{
+
+.webuild-seccion h2 {
     font-size: 72px;
     font-family: Muli;
     font-weight: 800;
@@ -251,7 +267,8 @@ li{
     text-align: left;
     margin-bottom: 16px;
 }
-.webuild-seccion p{
+
+.webuild-seccion p {
     font-family: "Roboto";
     font-size: 20px;
     font-weight: 400px;
@@ -259,16 +276,19 @@ li{
     color: #444444;
     margin-bottom: 3em;
 }
-.webuild-seccion a{
+
+.webuild-seccion a {
     font-size: 12px;
     font-family: Muli;
     font-weight: 700;
     line-height: 18px;
 }
-.webuild-seccion  h2 span{
+
+.webuild-seccion h2 span {
     position: relative;
 }
-.webuild-seccion h2 span::after{
+
+.webuild-seccion h2 span::after {
     content: "";
     background-color: #ffc050;
     height: 45%;
@@ -278,7 +298,8 @@ li{
     position: absolute;
     z-index: -1;
 }
-.webuild-seccion{
+
+.webuild-seccion {
     padding-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -287,28 +308,159 @@ li{
     max-width: 1440px;
     margin: auto;
 }
-.webuild-seccion-container{
+
+.webuild-seccion-container {
     position: relative;
     z-index: 0;
     background-color: #f7f7f7;
 }
-.webuild-button-container{
+
+.webuild-button-container {
     display: flex;
     gap: 40px;
 }
-.webuild-seccion img{
+
+.webuild-seccion img {
     max-width: 700px;
     display: block;
 }
-.innovate-mobil h2{
+.innovate-mobil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.innovate-mobil img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.innovate-mobil h2, .final-seccion-cards h2 {
     font-size: 32px;
     font-family: Muli;
     font-weight: 800;
     line-height: 48px;
     color: #444444;
+    text-align: left;
+    margin-bottom: 35px;
 }
-.bell-container img{
+
+.bell-container img {
     width: 100%;
+}
 
+.innovate-progress-bar .innovate-progress-bar-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    color: #444444;
+}
 
+.innovate-progress-bar .innovate-progress-bar-item {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(0, 0, 0, .05);
+    margin: 10px 0 20px 0;
+}
+
+.innovate-progress-bar .innovate-progress-bar-item span {
+    display: block;
+    background-color: #ffc050;
+    width: 90%;
+    height: 100%;
+}
+
+.innovate-progress-bar .innovate-progress-bar-item-80 span {
+    width: 80%;
+    background-color: #6272c7;
+}
+
+.innovate-progress-bar .innovate-progress-bar-item-70 span {
+    width: 70%;
+}
+.final-seccion-cards {
+    max-width: 1440px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.final-seccion-cards p{
+    font-size: 16px;
+    color: #444444;
+    line-height: 30px;
+}
+.final-seccion-cards .info-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 35px;
+    width: 100%;
+}
+.final-seccion-cards .info-grid h4{
+    font-family: "Muli";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 29px;
+    color: #444444;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+.final-seccion-cards .info-grid .info-grid-socials {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.final-seccion-cards .info-grid .info-grid-socials a{
+    display: block;
+    margin: 0 1.5em;
+}
+.final-seccion-cards form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+.final-seccion-cards form input, .final-seccion-cards form textarea{
+    width: 100%;
+    border-radius: 99em;
+    border: 1px solid #eaeaea;
+    color: #333333;
+    padding: 12px 18px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 30px;
+    outline: none;
+} 
+.final-seccion-cards form input:focus, .final-seccion-cards form textarea:focus{
+    border-color: #ffc050;
+
+}
+.final-seccion-cards form textarea {
+border-radius: 20px;
+height: 150px;
+}
+.final-seccion-cards form input:first-child,.final-seccion-cards form input:nth-child(2){
+    width: calc(50% - 50px)
+}
+.final-seccion-cards form button{
+    border: 0;
+    outline: none;
+    background: #6272c7;
+    padding: 13px 44px;
+    border-radius: 99em;
+    width: auto;
+    display: block;
+    transition: .44s all;
+    color: white;
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+.final-seccion-cards form button:hover{
+    background: black;
 }
