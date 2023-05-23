@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Open Sans";
@@ -463,4 +466,32 @@ height: 150px;
 }
 .final-seccion-cards form button:hover{
     background: black;
+}
+.back-to-top {
+    background-color: #333333;
+    width: 50px;
+    height: 50px;
+    border-radius: 99em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;font-size: 28px;
+    transition: .2s all;
+    position: fixed;
+    z-index: 100;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
+}
+.back-to-top:hover{
+    background-color: #ffc050;
+}
+.back-to-top i{
+    transform: translateY(55%);
+    transition: .2s all;
+}
+.back-to-top:hover i{
+    transform: translateY(-40%);
 }
